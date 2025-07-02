@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exibir Texto</title>
+</head>
+<body>
+
+  <input type="text" id="entrada" placeholder="Digite algo" />
+  <button onclick="mostrarTexto()">Exibir</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function mostrarTexto() {
+      const texto = document.getElementById("entrada").value;
+      document.getElementById("resultado").innerText = texto;
+    }
+  </script>
+
+</body>
+</html>
